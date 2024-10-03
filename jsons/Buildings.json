@@ -1,25 +1,34 @@
 [
-	{
-		"name": "Holodeck",
-		"replaces": "Circus Maximus",
-		"uniqueTo": "Aliens",
-		"cost": 480,
-		"happiness": 12,
-		"culture": 12,
-		"science": 12,
-		"maintenance": 96,
+    {
+		"name": "Prague Castle",
+		"replaces": "Palace",
 		"isNationalWonder": true,
-		"requiredBuildingInAllCities": "Colosseum",
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 2,
+		"cityStrength": 3,
+		"cost": 1,
+		"uniques": ["Indicates the capital city"]
+	},
+	{
+		"name": "Clementinum",
+		"replaces": "The Great Library",
+		"uniqueTo": "Bohemia",
+        "percentStatBonus" : {"science": 20, "culture": 30}
+		"isNationalWonder": true,
+		"requiredBuildingInAllCities": "Library",
 		"requiredTech": "Horseback Riding"
 	},
 	{
-		"name": "Breeders",
-		"replaces": "Aqueduct",
-		"uniqueTo": "Aliens",
-		"cost": 80,
-		"hurryCostModifier": 160,
-		"happiness": 2,
-		"uniques": ["40% of food is carried over after a new citizen is born"],
-		"requiredTech": "Engineering"
-	}
+		"name": "Charles University",
+	    "replaces": "Oxford University",
+        "uniqueTo": "Bohemia",
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 33},
+		"specialistSlots": {"Scientist": 2},
+		"requiredBuilding": "Library",
+		"uniques": ["[+2 Science] from [River] tiles [in this city]"],
+		"requiredTech": "Education"
+	},
 ]
